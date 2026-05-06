@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-vibrant-bg: #0F172A;
+  --color-vibrant-mint: #6EE7B7;
+  --color-vibrant-blue: #3B82F6;
+  --color-vibrant-purple: #7C3AED;
+  --color-vibrant-pink: #F472B6;
+  --color-vibrant-yellow: #FACC15;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-vibrant-bg text-white overflow-x-hidden p-4 md:p-8;
+  }
+}
+
+.bento-card {
+  @apply border-4 border-black transition-all duration-200 bg-white text-black p-6;
+  box-shadow: 8px 8px 0px #000;
+}
+
+.bento-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 10px 10px 0px #000;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #6EE7B7, #3B82F6, #9333EA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}

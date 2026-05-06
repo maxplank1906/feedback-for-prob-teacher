@@ -1,11 +1,30 @@
-<div align="center">
+# The Javeria Equation 📊
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A high-vibe, probability-themed feedback website for MS Javeria Azmat. Built with React, Vite, Tailwind CSS, and Framer Motion.
 
-  <h1>Built with AI Studio</h2>
+## 🚀 Deployment to Vercel
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+This project is optimized for Vercel. Follow these steps to host it:
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1.  **Push to GitHub**:
+    -   Create a new repository on GitHub.
+    -   Initialize git in this folder (if not already): `git init`
+    -   Add files: `git add .`
+    -   Commit: `git commit -m "Initial commit"`
+    -   Link to GitHub: `git remote add origin YOUR_GITHUB_REPO_URL`
+    -   Push: `git push -u origin main`
 
-</div>
+2.  **Import to Vercel**:
+    -   Go to [vercel.com](https://vercel.com).
+    -   Click **"New Project"**.
+    -   Import your GitHub repository.
+    -   Vercel will auto-detect the **Vite** framework.
+    -   Click **"Deploy"**.
+
+## 🛠️ Tech Stack
+
+-   **Frontend**: React 19 + TypeScript
+-   **Styling**: Tailwind CSS 4 (Vibrant Bento Theme)
+-   **Animations**: Framer Motion
+-   **Charts**: Recharts
+-   **Icons**: Lucide React
